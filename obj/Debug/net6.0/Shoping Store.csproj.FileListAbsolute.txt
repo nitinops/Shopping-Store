@@ -1,0 +1,26 @@
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\bin\Debug\net6.0\appsettings.json
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\bin\Debug\net6.0\Shoping Store.staticwebassets.runtime.json
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\bin\Debug\net6.0\Shoping Store.exe
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\bin\Debug\net6.0\Shoping Store.deps.json
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\bin\Debug\net6.0\Shoping Store.runtimeconfig.json
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\bin\Debug\net6.0\Shoping Store.dll
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\bin\Debug\net6.0\Shoping Store.pdb
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\Shoping Store.csproj.AssemblyReference.cache
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\Shoping Store.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\Shoping Store.AssemblyInfoInputs.cache
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\Shoping Store.AssemblyInfo.cs
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\Shoping Store.csproj.CoreCompileInputs.cache
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\Shoping Store.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\Shoping Store.RazorAssemblyInfo.cache
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\Shoping Store.RazorAssemblyInfo.cs
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\scopedcss\bundle\Shoping Store.styles.css
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\scopedcss\projectbundle\Shoping Store.bundle.scp.css
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\Shoping Store.dll
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\refint\Shoping Store.dll
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\Shoping Store.pdb
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\Shoping Store.genruntimeconfig.cache
+C:\Users\kumar978\source\repos\Shoping Store\Shoping Store\obj\Debug\net6.0\ref\Shoping Store.dll
