@@ -13,11 +13,15 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                             "C:\Program Files\dotnet\"dotnet msbuild "Shoping Store.csproj" /p:DeployOnBuild=true /p:PublishProfile="myDotnetApplication - Web Deploy.pubxml" /p:Password="2hXkavMLL6H0cryR6CAZo38sajsMqg6qtgJvPutudhu7D5vFgb6jPioZ2KdC"
+
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                             "C:\Program Files\dotnet\"dotnet msbuild "Shoping Store.csproj" /p:DeployOnBuild=true /p:PublishProfile="myDotnetApplication - Web Deploy.pubxml" /p:Password="2hXkavMLL6H0cryR6CAZo38sajsMqg6qtgJvPutudhu7D5vFgb6jPioZ2KdC"
+
             }
         }
     }
