@@ -6,11 +6,11 @@ pipeline {
             steps {
                 script{
                     $url='http://dummy.restapiexample.com/api/v1/employees'
-                VERSION =powershell(
+                $VERSION =powershell(
 returnStdout:true,
 script: '''(Invoke-RestMethod -Method 'Get' -Uri $url)'''
 )
-                
+                echo $VERSION
                 }
 
                 echo 'Building..'
