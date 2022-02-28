@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                $url='http://dummy.restapiexample.com/api/v1/employees'
+               
                 script{
                     
                 $VERSION =powershell(
 returnStdout:true,
-script: '''(Invoke-RestMethod -Method 'Get' -Uri $url)'''
+script: '''(Invoke-RestMethod -Method 'Get' -Uri 'http://dummy.restapiexample.com/api/v1/employees')'''
 )
                 echo $VERSION
                 }
