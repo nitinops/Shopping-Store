@@ -9,8 +9,7 @@ pipeline {
                     
  $VERSION =powershell(
 returnStdout:true,
-                    $Cred = Get-Credential
-$Url = "https://https://api.instantwebtools.net/v1/airlines"
+                   
 $Body = @{
     search = "search index=_internal | reverse | table index,host,source,sourcetype,_raw"
     output_mode = "csv"
