@@ -8,9 +8,7 @@ pipeline {
                 echo "${params.id}"
             
             
-          
-                script{}
-                             
+   
 
                 echo 'Building..'
 
