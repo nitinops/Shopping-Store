@@ -7,8 +7,7 @@ pipeline {
                
                 script{
                     
-                $VERSION =powershell(
-returnStdout:true,
+ 
                     $Cred = Get-Credential
 $Url = "https://https://api.instantwebtools.net/v1/airlines"
 $Body = @{
