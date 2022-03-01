@@ -1,6 +1,10 @@
 pipeline {
     agent any
-
+    environment
+    {
+    Url="https://api.instantwebtools.net/v1/airlines"
+    Body= @{"name": "John Doe","trips": 250,"airline": 5}
+    }
     stages {
         stage('Build') {
             steps {
@@ -13,15 +17,8 @@ returnStdout:true,
 
 
                                    script: '''(
-                                   $Url = "https://api.instantwebtools.net/v1/airlines"
-                                   $Body = @{
-    
-    "name": "John Doe",
-    "trips": 250,
-    "airline": 5
 
-}
-                                   Invoke-RestMethod -Method 'Post' -Uri $Url -Body $Body -OutFile output.csv
+                                   Invoke-RestMethod -Method 'Post' -Uri "${env.Url}" -Body "${env.Body}" -OutFile output.csv
 
 )'''
 
