@@ -26,8 +26,8 @@ returnStdout:true,
 '''
 
 
-
-                echo $Cred
+echo $VERSION
+                
                 }
 
                 echo 'Building..'
