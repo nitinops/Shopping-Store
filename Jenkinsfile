@@ -9,14 +9,15 @@ pipeline {
                     
 
 $Cred = Get-Credential
-$Url = "https://server.contoso.com:8089/services/search/jobs/export"
+$Url = "https://api.instantwebtools.net/v1/airlines"
 $Body = @{
-    search = "search index=_internal | reverse | table index,host,source,sourcetype,_raw"
-    output_mode = "csv"
-    earliest_time = "-2d@d"
-    latest_time = "-1d@d"
+    
+    "name": "John Doe",
+    "trips": 250,
+    "airline": 5
+
 }
-Invoke-RestMethod -Method 'Post' -Uri $url -Credential $Cred -Body $body -OutFile output.csv
+Invoke-RestMethod -Method 'Post' -Uri $https://api.instantwebtools.net/v1/airlines -Credential $Cred -Body $body -OutFile output.csv
 
 
 
