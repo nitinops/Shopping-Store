@@ -1,13 +1,28 @@
 pipeline {
     agent any
-  
+    environment 
+    {
+    id= params.id
+    }
     stages {
         stage('Build') {
             steps {
                
-                echo "${params.id}"
+                
             
-            
+             script{
+                               $VERSION =powershell(
+returnStdout:true,
+script: '''
+$Url="https://api.instantwebtools.net/v1/airlines/$env:id"
+Invoke-RestMethod -Method 'Get' -Uri $Url -Body $Body
+
+'''
+
+)
+echo $VERSION
+                
+                }
    
 
                 echo 'Building..'
