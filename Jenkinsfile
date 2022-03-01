@@ -10,16 +10,15 @@ pipeline {
 returnStdout:true,
 
 
-$Cred = Get-Credential
-
-$Body = @{
+def Url = "https://api.instantwebtools.net/v1/airlines"
+ def Body = @{
     
     "name": "John Doe",
     "trips": 250,
     "airline": 5
 
 }
-script: '''(Invoke-RestMethod -Method 'Post' -Uri $Url -Credential $Cred -Body $Body -OutFile output.csv
+                                   script: '''(Invoke-RestMethod -Method 'Post' -Uri "${Url}" -Credential $Cred -Body "${Body}" -OutFile output.csv
 
 )'''
 
