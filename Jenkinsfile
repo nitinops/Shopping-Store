@@ -9,7 +9,7 @@ pipeline {
             
             
           
-                script{
+                script{}
                              
 
                 echo 'Building..'
