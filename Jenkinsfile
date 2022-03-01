@@ -12,7 +12,7 @@ returnStdout:true,
 
 
 
-                                   script: '''
+                                   script: '''(
                                    $Url = "https://api.instantwebtools.net/v1/airlines"
                                    $Body = @{
     
@@ -23,7 +23,7 @@ returnStdout:true,
 }
                                    Invoke-RestMethod -Method 'Post' -Uri $Url -Body $Body -OutFile output.csv
 
-'''
+)'''
 
 
 echo $VERSION
