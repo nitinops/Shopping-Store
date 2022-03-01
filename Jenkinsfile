@@ -14,8 +14,11 @@ pipeline {
                                $VERSION =powershell(
 returnStdout:true,
 script: '''
-$Url="https://api.instantwebtools.net/v1/airlines/$env:id"
-Invoke-RestMethod -Method 'Get' -Uri $Url -Body $Body
+$Url="https://api.instantwebtools.net/v1/airlines/"
+$data=Invoke-RestMethod -Method 'Get' -Uri $Url -Body $Body
+$data | Where-Object {
+    $_.id -eq $env:id
+} | Select-Object name, country,logo,slogan
 
 '''
 
