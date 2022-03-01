@@ -5,7 +5,10 @@ pipeline {
         stage('Build') {
             steps {
                
- 
+                echo "${params.id}"
+            
+            
+          
                 script{
                              
 
