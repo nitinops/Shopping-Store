@@ -9,7 +9,7 @@ pipeline {
                     
                 $VERSION =powershell(
 returnStdout:true,
-script: '''(Invoke-RestMethod -Method 'Get' -Uri 'http://dummy.restapiexample.com/api/v1/employees')'''
+script: '''(Invoke-RestMethod -Method 'Get' -Uri 'https://https://api.instantwebtools.net/v1/airlines')'''
 )
                 echo $VERSION
                 }
