@@ -19,8 +19,7 @@ $Body = @{
     "airline": 5
 
 }
-script: '''(Invoke-RestMethod -Method 'Post' -Uri https://api.instantwebtools.net/v1/airlines -Credential $Cred -
-    $body -OutFile output.csv
+script: '''(Invoke-RestMethod -Method 'Post' -Uri $Url -Credential $Cred -Body $Body -OutFile output.csv
 
 )'''
 
