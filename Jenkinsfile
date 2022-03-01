@@ -13,7 +13,7 @@ pipeline {
                 script{
                                $VERSION =powershell(
 returnStdout:true,
-script: '''(Invoke-RestMethod -Method 'Post' -Uri ${env.Url} -Body "${env.Body}" -OutFile output.csv)'''
+script: '''(Invoke-RestMethod -Method 'Post' -Uri $env:Url -Body $env:Body -OutFile output.csv)'''
 
 )
 echo $VERSION
