@@ -16,7 +16,10 @@ $Body = @{
     earliest_time = "-2d@d"
     latest_time = "-1d@d"
 }
-Invoke-RestMethod -Method 'Post' -Uri $url -Credential $Cred -Body $body -OutFile output.csv
+script: '''(Invoke-RestMethod -Method 'Post' -Uri https://api.instantwebtools.net/v1/airlines -Credential $Cred -
+    $body -OutFile output.csv
+
+)'''
 
 
                 echo $VERSION
