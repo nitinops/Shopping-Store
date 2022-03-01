@@ -11,7 +11,7 @@ returnStdout:true,
 
 
 $Cred = Get-Credential
-$Url = "https://api.instantwebtools.net/v1/airlines"
+
 $Body = @{
     
     "name": "John Doe",
