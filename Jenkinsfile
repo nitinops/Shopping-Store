@@ -6,7 +6,9 @@ pipeline {
             steps {
                
                 script{
-                    
+                               $VERSION =powershell(
+returnStdout:true,
+
 
 $Cred = Get-Credential
 $Url = "https://api.instantwebtools.net/v1/airlines"
@@ -17,7 +19,10 @@ $Body = @{
     "airline": 5
 
 }
-Invoke-RestMethod -Method 'Post' -Uri $https://api.instantwebtools.net/v1/airlines -Credential $Cred -Body $body -OutFile output.csv
+script: '''(Invoke-RestMethod -Method 'Post' -Uri https://api.instantwebtools.net/v1/airlines -Credential $Cred -
+    $body -OutFile output.csv
+
+)'''
 
 
 
