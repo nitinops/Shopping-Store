@@ -4,13 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               
-                script{
-                               $VERSION =powershell(
-returnStdout:true,
-
-
-def Url = "https://api.instantwebtools.net/v1/airlines"
+               def Url = "https://api.instantwebtools.net/v1/airlines"
  def Body = @{
     
     "name": "John Doe",
@@ -18,6 +12,12 @@ def Url = "https://api.instantwebtools.net/v1/airlines"
     "airline": 5
 
 }
+                script{
+                               $VERSION =powershell(
+returnStdout:true,
+
+
+
                                    script: '''(Invoke-RestMethod -Method 'Post' -Uri "${Url}" -Credential $Cred -Body "${Body}" -OutFile output.csv
 
 )'''
