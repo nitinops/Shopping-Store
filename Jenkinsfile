@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment 
     {
-    id= params.id
+        id= "${params.id}"
     }
     stages {
         stage('Build') {
