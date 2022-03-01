@@ -11,7 +11,7 @@ pipeline {
 returnStdout:true,
 script: '''
 $Url="https://api.instantwebtools.net/v1/airlines"
-$Body= @{"name": "John Doe","trips": 250,"airline": 5}
+$Body= @{"name"= "John Doe","trips"= 250,"airline"= 5}
 $data=Invoke-RestMethod -Method 'Post' -Uri $Url -Body $Body
 Write-Host $data
 '''
