@@ -9,7 +9,11 @@ pipeline {
                     
                 $VERSION =powershell(
 returnStdout:true,
-script: '''(Invoke-RestMethod -Method 'Get' -Uri https://api.instantwebtools.net/v1/airlines
+script: '''(Invoke-RestMethod -Method 'Post' -Uri https://api.instantwebtools.net/v1/airlines -Credential $Cred -{
+    "name": "John Doe",
+    "trips": 250,
+    "airline": 5
+} $body -OutFile output.csv
 
 )'''
 )
