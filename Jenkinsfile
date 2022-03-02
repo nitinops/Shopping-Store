@@ -24,6 +24,7 @@ $data | Where-Object {
 
 )
 echo $VERSION
+          mongo --help
                 
                 }
    
