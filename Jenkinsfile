@@ -4,7 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat """
+                bat 
+                
+               """
+               dir
         cmd_exec('echo "dir /a /b"')
         xcopy
         cmd_exec('echo "Buils starting..."')
