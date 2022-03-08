@@ -7,11 +7,7 @@ pipeline {
             
                 
            bat """
-            cd freddie-app
-            mvn clean package
-        
-       
-      
+          
           echo 'Testing..'
           echo 'Testing..'
         """
