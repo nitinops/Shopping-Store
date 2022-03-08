@@ -7,7 +7,8 @@ pipeline {
             
                 
            bat """
-        cd C:"\Program Files\Java\jdk1.8.0_211\bin"
+       
+        cd c:\\Program Files\\Java\\jdk1.8.0_211\\bin
            
           echo 'Testing..'
           echo 'Testing..'
