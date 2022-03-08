@@ -13,15 +13,30 @@ pipeline {
           echo 'Testing..'
           echo 'Testing..'
         """
+                echo 'Testing....'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                bat """
+       
+        cd c:\\Program Files\\jdk-17_windows-x64_bin\\jdk-17.0.2\\bin
+           
+          echo 'Developing..'
+          echo 'Developing..'
+        """
+                echo 'Developing....'
             }
         }
         stage('Deploy') {
             steps {
+                bat """
+       
+        cd c:\\Program Files\\Robo 3T 1.4.4
+           
+          echo 'Developing..'
+          echo 'Developing..'
+        """
                 echo 'Deploying....'
             }
         }
