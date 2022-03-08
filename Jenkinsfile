@@ -5,7 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 bat """
-        
+        dir
+        xcopy
           echo 'Testing..'
           echo 'Testing..'
         """
