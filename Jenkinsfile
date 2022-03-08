@@ -7,7 +7,8 @@ pipeline {
             
                 
            bat """
-          
+          cd 
+            mvn 
           echo 'Testing..'
           echo 'Testing..'
         """
