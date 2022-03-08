@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 
+            
                 
-               """
-               dir
+           bat """
+            cd freddie-app
+            mvn clean package
         
-        xcopy
        
       
           echo 'Testing..'
