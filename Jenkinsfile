@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 bat """
+                cd C:\Windows\System32
           echo 'Testing..'
           echo 'Testing..'
         """
