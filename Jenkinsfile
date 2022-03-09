@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
             
-           "C:\\ProgramData\\Microsoft\Windows\\Start Menu\\Programs\\Administrative Tools"     
+           "C:\Users\nitinrpa\.azure"   
        
 
                 echo 'command is running....'
