@@ -13,8 +13,8 @@ pipeline {
                                     clientSecretVariable: 'CLIENT_SECRET',
                                     tenantIdVariable: 'TENANT_ID')]) {
    bat """  
-                 az login --service-principal -u $CLIENT_ID -p $CLIENT_SECRET -t $TENANT_ID
-                 az account set --name $SUBS_ID
+                call az login --service-principal -u $CLIENT_ID -p $CLIENT_SECRET -t $TENANT_ID
+                call az account set --name $SUBS_ID
     """
 }
                 
