@@ -5,10 +5,7 @@ pipeline {
         stage('Build') {
             steps {
             
-           "C:\\Users\\nitinrpa\\.azure"
-       
-
-                echo 'command is running....'
+           bat """ az login """
             }
         }
         stage('Test') {
