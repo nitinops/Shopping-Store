@@ -5,7 +5,17 @@ pipeline {
         stage('Build') {
             steps {
             
-           bat """ az login --service-principal -u ff417966-c1d5-4058-92ae-e759de533da6 -p Eq-7Q~dkUr-MpF4mmvKA538ba9pt7mz3t6tf4 -t 95b3fd34-bb88-48e0-8e3a-33fa33a1c53a """
+           
+                
+             withCredentials([azureServicePrincipal(credentialsId: '4651382e-5cd7-4503-875a-595730238b31',
+                                    subscriptionIdVariable: 'SUBS_ID',
+                                    clientIdVariable: 'CLIENT_ID',
+                                    clientSecretVariable: 'CLIENT_SECRET',
+                                    tenantIdVariable: 'TENANT_ID')]) {
+   bat """  
+                 az login --service-principal -u $CLIENT_ID -p $CLIENT_SECRET -t $TENANT_ID
+    """
+}
                 
 
             }
