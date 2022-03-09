@@ -6,9 +6,9 @@ pipeline {
             steps {
             
            "C:\\ProgramData\\Microsoft\Windows\\Start Menu\\Programs\\Administrative Tools"     
-        withCredentials([azureServicePrincipal('<4651382e-5cd7-4503-875a-595730238b31>')]) 
+       
 
-                
+                echo 'command is running....'
             }
         }
         stage('Test') {
