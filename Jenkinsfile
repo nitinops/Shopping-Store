@@ -16,6 +16,7 @@ pipeline {
     az cloud list --output table
     az login --service-principal -u $CLIENT_ID -p $CLIENT_SECRET -t $TENANT_ID
     az account set --name $SUBS_ID
+     az cloud list --output table
                 
    """
 }
