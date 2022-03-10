@@ -17,7 +17,7 @@ pipeline {
     az login --service-principal -u $CLIENT_ID -p $CLIENT_SECRET -t $TENANT_ID
     az account set --name $SUBS_ID
     dotnet publish -o PublishFolder
-    Compress-Archive -DestinationPath ./PublishFolder.zip -Path ./PublishFolder
+    Compress-Archive -DestinationPath ./PublishFolder.zip -Path ./PublishFolder -Force
     az webapp deployment source config-zip \
     -g "MyFirst_Jenkins_API" -n "myfirstwebAzure" \
     --src "./PublishFolder.zip"
