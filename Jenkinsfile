@@ -18,6 +18,9 @@ pipeline {
     az account set --name $SUBS_ID
     dotnet publish -o PublishFolder
     Compress-Archive -DestinationPath ./PublishFolder.zip -Path ./PublishFolder
+    az webapp deployment source config-zip \
+    -g "MyFirst_Jenkins_API" -n "myfirstwebAzure" \
+    --src "./PublishFolder.zip"
                 
    """
 }
