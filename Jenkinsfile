@@ -4,11 +4,10 @@ pipeline {
         stage('Build') {
             steps{
             script{
-            def get = new URL("https://httpbin.org/get").openConnection();
-def getRC = get.getResponseCode();
-println(getRC);
-if(getRC.equals(200)) {
-    println(get.getInputStream().getText());
+            import requests
+response = requests.get("http://api.open-notify.org/astros.json")
+print(response)
+>>>> Response<200>
 
 
            
