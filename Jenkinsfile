@@ -2,6 +2,7 @@ pipeline {
     agent any
     stages {
         stage('Build') {
+            steps{
             script{
             def get = new URL("http://fakestoreapi.com/products").openConnection();
 def getRC = get.getResponseCode();
@@ -14,7 +15,7 @@ if(getRC.equals(200)) {
 }               
              
 }
-                
+            }
             
     }
         stage('Test') {
