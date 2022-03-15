@@ -4,16 +4,15 @@ pipeline {
         stage('Build') {
             steps{
                 script{
->>> import requests
->>> api_url = "https://jsonplaceholder.typicode.com/todos/1"
->>> response = requests.get(api_url)
->>> response.json()
-{'userId': 1, 'id': 1, 'title': 'delectus aut autem', 'completed': False}
-                    >>> response.status_code
-200
+ 
+ powershell """ import requests
+ api_url = "https://jsonplaceholder.typicode.com/todos/1"
+ response = requests.get(api_url)
+ print(response.json())
+print(response.status_code)
 
->>> response.headers["Content-Type"]
-'application/json; charset=utf-8'
+"""
+
 
             }   
                 
