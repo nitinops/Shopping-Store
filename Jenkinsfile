@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps{
             script{
-            def get = new URL("http://fakestoreapi.com/products").openConnection();
+            def get = new URL("https://httpbin.org/get").openConnection();
 def getRC = get.getResponseCode();
 println(getRC);
 if(getRC.equals(200)) {
