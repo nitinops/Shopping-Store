@@ -15,7 +15,7 @@ if(getRC.equals(200)) {
              
 }
                 
-            }
+            
     }
         stage('Test') {
             steps {
