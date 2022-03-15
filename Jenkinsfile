@@ -6,7 +6,7 @@ pipeline {
                 script
                 {
  
- bat """ python pyscripting.py
+ powershell """ python pyscripting.py
  
 """
 
