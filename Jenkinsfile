@@ -7,7 +7,7 @@ pipeline {
             
     bat """
  
-       query = {'id':'1'}
+       query = {'id':''}
 response = requests.get('http://fakestoreapi.com/products', params=query)
 print(response())
     }
