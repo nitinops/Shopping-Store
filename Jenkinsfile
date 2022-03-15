@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            def get = new URL("https://httpbin.org/get").openConnection();
+            def get = new URL("http://fakestoreapi.com/products").openConnection();
 def getRC = get.getResponseCode();
 println(getRC);
 if(getRC.equals(200)) {
